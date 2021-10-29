@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">JAFF Whats</string>
+    <string name="digite_email">Digite seu Email</string>
+    <string name="digite_senha">Digite sua senha</string>
+    <string name="botao_logar">LOGAR</string>
+    <string name="cadastre">Não tem conta? Cadastre-se</string>
+    <string name="cadastrar">CADASTRAR</string>
+    <string name="inserirNome">Nome/Sobrenome</string>
+    <string name="pesquisarIconeActionbar">Pesquisar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nomeUsuarioConfiguracoes">Nome do Usuário</string>
+    <string name="TextoConfiguracoes">Esse não é seu nome de usuário, nem sua senha. Esse nome ficará visível para seus contatos do JAFF Chat</string>
+    <string name="nome_padrao_lista_contatos">Nome</string>
+    <string name="email_padrao_lista_contatos">Email</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

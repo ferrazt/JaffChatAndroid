@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/JAFFWhats/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/drawable/ic_camera_cinza_alt_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/activity_cadastro.xml" value="0.33" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/activity_chat.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/activity_configuracoes.xml" value="0.67" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/activity_loging.xml" value="0.33" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/adapter_contatos.xml" value="0.47884187082405344" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/content_chat.xml" value="0.25" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/content_chat2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/content_chat3.xml" value="0.25" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_contatosragment.xml" value="0.33" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_conversas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_first2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_first3.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_second2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/fragment_second3.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/layout/toolbar.xml" value="0.33" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/menu/menu_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jhoel/JAFFWhats/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
