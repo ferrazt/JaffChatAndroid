@@ -14,6 +14,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
+import com.jaff.jaffwhats.Activity.ChatActivity;
 import com.jaff.jaffwhats.R;
 import com.jaff.jaffwhats.config.firebase;
 
@@ -62,8 +63,8 @@ public class Contatosragment extends Fragment {
                         new RecyclerItemClickListener.OnItemClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
-                               // Intent i = new Intent(getActivity(), ChatActivity.class);
-                             //   startActivity(i);
+                                Intent i = new Intent(getActivity(), ChatActivity.class);
+                                startActivity(i);
                             }
 
                             @Override
