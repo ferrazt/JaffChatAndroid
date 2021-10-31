@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
+import com.jaff.jaffwhats.Activity.ChatActivity;
 import com.jaff.jaffwhats.R;
 import com.jaff.jaffwhats.config.firebase;
 
@@ -62,8 +64,10 @@ public class Contatosragment extends Fragment {
                         new RecyclerItemClickListener.OnItemClickListener() {
                             @Override
                             public void onItemClick(View view, int position) {
-                               // Intent i = new Intent(getActivity(), ChatActivity.class);
-                             //   startActivity(i);
+                                Usuario usuarioSelecionado = listaContatos.get(position);
+                                Intent i = new Intent(getActivity(), ChatActivity.class);
+                                i.putExtra("chatContato", usuarioSelecionado);
+                                startActivity(i);
                             }
 
                             @Override
@@ -94,6 +98,9 @@ public class Contatosragment extends Fragment {
     }
 
     public void recoverUsersList(){
+        //Limpar contatos
+        listaContatos.clear();
+
         valueEventListenerContatos = databaseReference
                 .child("users")
                 .addValueEventListener(new ValueEventListener() {

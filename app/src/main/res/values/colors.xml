@@ -11,4 +11,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cinza_claro">#EEEEEE</color>
+    <color name="balao_remetente">#DBF9C4</color>
 </resources>

@@ -11,12 +11,14 @@
         android:id="@+id/imageView3"
         android:layout_width="200dp"
         android:layout_height="157dp"
+        android:layout_marginBottom="40dp"
         android:contentDescription="Logo"
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@+id/TextLayoutInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/TextLayoutInput"
@@ -42,6 +44,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +63,7 @@
         android:id="@+id/button2"
         android:layout_width="347dp"
         android:layout_height="40dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorPrimaryDark"
         android:onClick="validatorLogin"
         android:text="@string/botao_logar"
@@ -73,6 +77,7 @@
         android:id="@+id/textView"
         android:layout_width="185dp"
         android:layout_height="20dp"
+        android:layout_marginTop="32dp"
         android:onClick="abrirTelaCadastro"
         android:text="@string/cadastre"
         android:textColor="@color/white"
