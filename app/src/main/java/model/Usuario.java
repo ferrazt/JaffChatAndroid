@@ -3,14 +3,25 @@ package model;
 import android.net.Uri;
 
 import java.io.Serializable;
-
+/**
+ * Created by Jhoel Fiorese
+ **/
 public class Usuario implements Serializable {
+    private String uid;
     private String nome;
     private String email;
     private String senha;
     private String foto;
 
     public Usuario() {
+    }
+
+    public String getuId() {
+        return uid;
+    }
+
+    public void setuId(String uId) {
+        this.uid = uId;
     }
 
     public String getNome() {

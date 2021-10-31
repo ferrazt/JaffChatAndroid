@@ -39,6 +39,7 @@
     </android.support.v7.widget.Toolbar>
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerMensagens"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -68,7 +69,7 @@
             android:paddingEnd="6dp">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editMensagem"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -84,13 +85,14 @@
         </LinearLayout>
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton3"
+            android:id="@+id/fabEnviar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:contentDescription="@string/escrever"
+            android:onClick="enviarMensagem"
             app:fabSize="mini"
-            app:srcCompat="@drawable/ic_send_branco_24"
-            android:contentDescription="@string/escrever" />
+            app:srcCompat="@drawable/ic_send_branco_24" />
     </LinearLayout>
 
 

@@ -23,8 +23,8 @@ import model.Usuario;
 
 public class ContatosAdapter extends RecyclerView.Adapter <ContatosAdapter.MyViewHolder>{
 
-    private ArrayList<Usuario> listaContatos;
-    private Context context;
+    private final ArrayList<Usuario> listaContatos;
+    private final Context context;
     public ContatosAdapter(ArrayList<Usuario> listaContatos, Context context) {
         this.listaContatos = listaContatos;
         this.context = context;
@@ -43,6 +43,7 @@ public class ContatosAdapter extends RecyclerView.Adapter <ContatosAdapter.MyVie
         myViewHolder.nome.setText(usuario.getNome());
         myViewHolder.email.setText(usuario.getEmail());
 
+
         if(usuario.getFoto() != null) {
             Uri uri = Uri.parse(usuario.getFoto());
             Glide.with(context).load(uri).into(myViewHolder.foto);
@@ -55,7 +56,7 @@ public class ContatosAdapter extends RecyclerView.Adapter <ContatosAdapter.MyVie
         return listaContatos.size();
     }
 
-    public class MyViewHolder  extends RecyclerView.ViewHolder{
+    public static class MyViewHolder  extends RecyclerView.ViewHolder{
         CircleImageView foto;
         TextView nome, email;
 
