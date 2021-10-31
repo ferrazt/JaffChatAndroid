@@ -35,6 +35,7 @@ import java.io.ByteArrayOutputStream;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import helper.DatabaseFirebase;
+import helper.Midia;
 import helper.Permissao;
 import helper.UsuarioFirebase;
 import model.Usuario;
@@ -47,9 +48,6 @@ public class ConfiguracoesActivity extends AppCompatActivity {
     };
 
     private ImageButton imageButtoncamera, imageButtongaleria;
-
-    private static final int SELECAO_CAMERA = 100;
-    private static final int SELECAO_GALERIA = 200;
     private CircleImageView circleImageViewFotoPerfil;
     private EditText editText;
     private ImageView imageViewAtualizarNome;
@@ -95,7 +93,7 @@ public class ConfiguracoesActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 if(i.resolveActivity(getPackageManager())!= null){
-                    startActivityForResult(i,SELECAO_CAMERA);
+                    startActivityForResult(i, Midia.SELECAO_CAMERA);
                 }
 
 
@@ -106,7 +104,7 @@ public class ConfiguracoesActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                 if(i.resolveActivity(getPackageManager())!= null){
-                    startActivityForResult(i,SELECAO_GALERIA);
+                    startActivityForResult(i,Midia.SELECAO_GALERIA);
                 }
             }
         });
@@ -132,10 +130,10 @@ public class ConfiguracoesActivity extends AppCompatActivity {
             Bitmap imagem = null;
             try{
                 switch (requestCode){
-                    case SELECAO_CAMERA:
+                    case Midia.SELECAO_CAMERA:
                         imagem  = (Bitmap) data.getExtras().get("data");
                         break;
-                    case SELECAO_GALERIA:
+                    case Midia.SELECAO_GALERIA:
                         Uri localImagemSelecionada = data.getData();
                         imagem = MediaStore.Images.Media.getBitmap(getContentResolver(), localImagemSelecionada);
                         break;

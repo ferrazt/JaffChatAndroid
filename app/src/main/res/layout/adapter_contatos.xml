@@ -38,7 +38,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textEmailContatos"
+                android:id="@+id/textContatos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/email_padrao_lista_contatos" />

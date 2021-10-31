@@ -74,11 +74,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/white"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                android:ems="10" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageCamera"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 app:srcCompat="@drawable/ic_camera_cinza_alt_24" />

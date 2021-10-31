@@ -12,18 +12,18 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.jaff.jaffwhats.R;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import model.Conversa;
 import model.Usuario;
 
-public class ContatosAdapter extends RecyclerView.Adapter <ContatosAdapter.MyViewHolder>{
-
-    private final ArrayList<Usuario> listaContatos;
-    private final Context context;
-    public ContatosAdapter(ArrayList<Usuario> listaContatos, Context context) {
-        this.listaContatos = listaContatos;
-        this.context = context;
+public class ConversasAdapter extends RecyclerView.Adapter <ConversasAdapter.MyViewHolder>  {
+    private List<Conversa> conversas;
+    private Context context;
+    public ConversasAdapter(List<Conversa> lista, Context c) {
+        this.conversas = lista;
+        this.context = c;
     }
 
     @NonNull
@@ -35,12 +35,12 @@ public class ContatosAdapter extends RecyclerView.Adapter <ContatosAdapter.MyVie
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
-        Usuario usuario = listaContatos.get(i);
-        myViewHolder.nome.setText(usuario.getNome());
-        myViewHolder.email.setText(usuario.getEmail());
+        Conversa conversa = conversas.get(i);
+        myViewHolder.ultimaMensagem.setText(conversa.getUltimaMensagem());
 
-
-        if(usuario.getFoto() != null) {
+        Usuario usuario= conversa.getUsuarioExibicao();
+        myViewHolder.nome.setText((usuario.getNome()));
+        if(usuario.getFoto() != null){
             Uri uri = Uri.parse(usuario.getFoto());
             Glide.with(context).load(uri).into(myViewHolder.foto);
         }else
@@ -49,19 +49,19 @@ public class ContatosAdapter extends RecyclerView.Adapter <ContatosAdapter.MyVie
 
     @Override
     public int getItemCount() {
-        return listaContatos.size();
+        return conversas.size();
     }
 
-    public static class MyViewHolder  extends RecyclerView.ViewHolder{
+    public class MyViewHolder extends RecyclerView.ViewHolder{
         CircleImageView foto;
-        TextView nome, email;
+        TextView nome, ultimaMensagem;
 
-        public MyViewHolder(@NonNull View itemView) {
-            super(itemView);
+        public MyViewHolder(View view){
+            super(view);
 
-            foto = itemView.findViewById(R.id.imageViewFotoContato);
-            nome = itemView.findViewById(R.id.textNomeContato);
-            email = itemView.findViewById(R.id.textContatos);
+            foto = view.findViewById(R.id.imageViewFotoContato);
+            nome = view.findViewById(R.id.textNomeContato);
+            ultimaMensagem = view.findViewById(R.id.textContatos);
         }
     }
 }
